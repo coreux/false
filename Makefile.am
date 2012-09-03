@@ -14,7 +14,7 @@
 
 bin_PROGRAMS = false
 
-doc_DATA = LICENSE-2.0 false.1.html
+doc_DATA = README LICENSE-2.0 false.1.html
 
 false_SOURCES = false.c
 
