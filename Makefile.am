@@ -14,6 +14,14 @@
 
 bin_PROGRAMS = false
 
-doc_DATA = LICENSE-2.0
+doc_DATA = LICENSE-2.0 false.1.html
 
 false_SOURCES = false.c
+
+dist_man1_MANS = false.1
+
+false.1: false.1.xml
+	$(XML2MAN) $<
+
+false.1.html: false.1.xml
+	$(XML2HTML) $< > $@
